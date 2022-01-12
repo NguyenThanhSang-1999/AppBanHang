@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="trongsuot">#00000000</color>     <!-- Màu đỏ -->
+    <color name="doimau">#D7CBCBCD</color>
+    <color name="red">#D7F60707</color>
+    <color name="orrange">#F8A327</color>
+    <color name="gray">#D779797C</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+</resources>

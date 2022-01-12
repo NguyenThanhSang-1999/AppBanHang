@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DangKyActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="232dp"
+            android:background="@drawable/backgrounddn"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/custom_backgroundlogin">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_marginTop="10dp"
+                android:id="@+id/toolbardangky"
+                android:background="#FFFFFF"
+                app:titleTextColor="#FF9800"
+                app:title="NHẬP THÔNG TIN"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+            </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:id="@+id/textviewcanhbao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:textColor="#FF5722" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:inputType="textCapWords"
+                            android:id="@+id/edt_ten"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/login"
+                            android:drawablePadding="10dp"
+                            android:layout_margin="10dp"
+                            android:hint="Nhập Tên "
+                            android:textColorHint="#706E6E"
+                            android:textColor="@color/black">
+                        </EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:inputType="textCapWords"
+                            android:id="@+id/edt_ho"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/login"
+                            android:drawablePadding="10dp"
+                            android:layout_margin="10dp"
+                            android:hint="Nhập Họ"
+                            android:textColorHint="#706E6E"
+                            android:textColor="@color/black">
+                        </EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/email"
+                        android:drawablePadding="10dp"
+                        android:layout_margin="10dp"
+                        android:hint="Nhập Email Người Dùng"
+                        android:textColorHint="#706E6E"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edt_sdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/phone"
+                        android:drawablePadding="10dp"
+                        android:layout_margin="10dp"
+                        android:hint="Nhập SĐT Người Dùng"
+                        android:textColorHint="#706E6E"
+                        android:inputType="number"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:inputType="textCapWords"
+                        android:id="@+id/edt_diachi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawableLeft="@drawable/location"
+                        android:drawablePadding="10dp"
+                        android:hint="Địa Chỉ Người Dùng"
+                        android:textColor="@color/black"
+                        android:textColorHint="#706E6E"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPasswordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
+                <EditText
+                    android:drawableStart="@drawable/lock"
+                    android:id="@+id/edt_matkhau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/lock"
+                    android:layout_margin="10dp"
+                    android:hint="Nhập Mật Khẩu"
+                    android:textColorHint="#706E6E"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black">
+                </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+                <RadioGroup
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonnam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Nam" />
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonnu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="Nữ" />
+                </RadioGroup>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_login"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Đăng ký"
+                    android:textColor="@color/orrange"
+                    android:id="@+id/btn_signup"
+                    android:textStyle="bold">
+                </Button>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

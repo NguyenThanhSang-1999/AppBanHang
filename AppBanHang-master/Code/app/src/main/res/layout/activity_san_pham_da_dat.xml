@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SanPhamDaDat"
+    android:background="@drawable/bgnv">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.DienThoaiActivity">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarsanphamdadat"
+            android:background="@color/white"
+            app:titleTextColor="#FF9800"
+            app:title="SẢN PHẨM ĐÃ ĐẶT"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textSize="30sp"
+            android:id="@+id/sanphamdadattrong"
+            android:layout_gravity="center"
+            android:textColor="#E8000000"
+            android:text="Bạn chưa đặt hàng!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <ListView
+                android:layout_margin="5dp"
+                android:id="@+id/listviewsanphamdadat"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:dividerHeight="10.0px"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp">
+
+            </ListView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Tổng tiền:"
+                android:textColor="#FFC107"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="right"
+                android:id="@+id/textviewtongtien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Giá sản phẩm"
+                android:textColor="#5362ef"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="400dp">
+    <RadioGroup
+        android:gravity="left|center"
+        android:id="@+id/radiogroud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/orrange"
+            android:textSize="30dp"
+            android:text="Dưới 2 triệu"
+            android:id="@+id/radiobuttonduoi2tr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/orrange"
+            android:textSize="30dp"
+            android:text="2 triệu -> 5 triệu"
+            android:id="@+id/radiobuttonduoi2tr5tr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/orrange"
+            android:textSize="30dp"
+            android:text="5 triệu -> 10 triệu"
+            android:id="@+id/radiobuttonduoi5tr10tr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/orrange"
+            android:textSize="30dp"
+            android:text="Trên 10 triệu"
+            android:id="@+id/radiobuttontren10tr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/orrange"
+            android:textSize="30dp"
+            android:text="Tất Cả"
+            android:id="@+id/radiobuttontatca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

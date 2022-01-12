@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toobarmanhinhchinh"
+                app:title="SH SHOP"
+                app:titleTextColor="#FF9800"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+            </androidx.appcompat.widget.Toolbar>
+            <ViewFlipper
+                android:background="@drawable/bgnv"
+                android:id="@+id/viewlipper"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </ViewFlipper>
+            <LinearLayout
+                android:background="@drawable/bgnv"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+                    <TextView
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:textColor="#FF9800"
+                        android:textSize="20dp"
+                        android:text="SẢN PHẨM MỚI NHẤT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                   <!--<android.support.v7.widget.RecyclerView-->
+                       <!--android:layout_width="match_parent"-->
+                       <!--android:id="@+id/recyclerView"-->
+                       <!--android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>-->
+                    <GridView
+                        android:layout_margin="5dp"
+                        android:verticalSpacing="5dp"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="2"
+                        android:id="@+id/girdviewsanpham"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </GridView>
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgnv">
+            <LinearLayout
+                android:background="@drawable/border_cart"
+                android:id="@+id/taikhoan"
+                android:layout_gravity="center|top"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:background="@color/trongsuot"
+                    android:id="@+id/imgbtn_hinhtk"
+                    android:src="@drawable/account"
+                    android:layout_margin="20dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_tentk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-10dp"
+                        android:gravity="center"
+                        android:text="Tên đăng nhập"
+                        android:textColor="#00BCD4"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_sdt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Số điện thoại"
+                        android:textColor="#FFC107"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <ListView
+                android:dividerHeight="0dp"
+                android:background="@color/trongsuot"
+                android:layout_marginTop="200dp"
+                android:id="@+id/listviewmanhinhchinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

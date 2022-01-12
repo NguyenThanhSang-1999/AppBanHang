@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbargooglemap"
+        android:background="@color/white"
+        app:title="THÔNG TIN CỬA HÀNG"
+        app:titleTextColor="#FF9800"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bgnv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="336dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/border_cart"
+                android:drawableLeft="@drawable/adress"
+                android:gravity="center"
+                android:text="Địa chỉ: 371 Nguyễn Kiệm, quận Gò Vấp, TP.HCM "
+                android:textColor="#FF9800"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/buttoncall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="Số điện thoại: 0886967808"
+                android:textColor="#FF9800"
+                android:textAllCaps="false"
+                android:textSize="17dp"/>
+            <Button
+                android:id="@+id/buttonemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="Email: nguyenthanhsang131199@gmail.com"
+                android:textColor="#FF9800"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <fragment
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".activity.ThongTinActivity" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

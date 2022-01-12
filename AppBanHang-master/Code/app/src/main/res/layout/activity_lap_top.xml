@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LapTopActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarlaptop"
+        android:background="@color/white"
+        app:titleTextColor="#FF9800"
+        app:title="LAPTOP"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+    <ListView
+        android:background="@drawable/bgnv"
+        android:paddingVertical="5dp"
+        android:dividerHeight="10.0px"
+        android:paddingHorizontal="5dp"
+        android:id="@+id/listviewlaptop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+</LinearLayout>
